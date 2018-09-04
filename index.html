@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="./public/main.css">
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+	</header>
+	<main id="main">
+		<p id="description">Let us know how we can improve freeCodeCamp.</p>
+		<form id="survey-form">
+			<div class="form-row">
+				<div class="labels">
+					<label id="name-label" for="name">Your Name:</label>
+				</div>
+				<div class="rightSide">
+					<input id="name" type="text" name="name" placeholder="Enter your full name" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label id="email-label" for="email">Your Email:</label>
+				</div>
+				<div class="rightSide">
+					<input id="email" type="email" name="email" placeholder="Enter your email" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label id="number-label" for="number">Your Age:</label>
+				</div>
+				<div class="rightSide">
+					<input id="number" type="number" name="number" min="18" max="125" placeholder="Enter your age >= 18" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label for="dropdown">Which option best describes your current role?</label>
+				</div>
+				<div class="rightSide">
+					<select name="dropdown" id="dropdown">
+						<option value="student">Student</option>
+						<option value="full-time-job">Full Time Job</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label for="ratings">How likely is that you would recommend freeCodeCamp to a friend?</label>
+				</div>
+				<div class="rightSide">
+					<ul>
+						<li class="options">
+							<label class="radio-labels">Sure
+								<input type="radio" name="radio-buttons" class="ratings" value="radio-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="radio-labels">Not Sure
+								<input type="radio" name="radio-buttons" class="ratings" value="radio-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="radio-labels">I don't know
+								<input type="radio" name="radio-buttons" class="ratings" value="radio-buttons">
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label for="dropdown">What do you like most in FCC:</label>
+				</div>
+				<div class="rightSide">
+					<select name="dropdown" id="dropdown">
+						<option value="forum">Forum</option>
+						<option value="tutorials">Tutorials</option>
+						<option value="people">People</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label for="suggestions">Things that should be improved in the future:</label>
+				</div>
+				<div class="rightSide">
+					<ul>
+						<li class="options">
+							<label class="checkbox-labels">Projects
+								<input type="checkbox" name="checkbox-buttons" class="suggestions" value="checkbox-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="checkbox-labels">Interface
+								<input type="checkbox" name="checkbox-buttons" class="suggestions" value="checkbox-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="checkbox-labels">Meetups
+								<input type="checkbox" name="checkbox-buttons" class="suggestions" value="checkbox-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="checkbox-labels">Job Offers
+								<input type="checkbox" name="checkbox-buttons" class="suggestions" value="checkbox-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="checkbox-labels">More Challenges
+								<input type="checkbox" name="checkbox-buttons" class="suggestions" value="checkbox-buttons">
+							</label>
+						</li>
+						<li class="options">
+							<label class="checkbox-labels">New Technologies
+								<input type="checkbox" name="checkbox-buttons" class="suggestions" value="checkbox-buttons">
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="labels">
+					<label for="textArea">Any Comments or Suggestions?</label>
+				</div>
+				<div class="rightSide">
+					<textarea name="comment" id="textArea" placeholder="Enter your comments here..."></textarea>
+				</div>
+			</div>
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
